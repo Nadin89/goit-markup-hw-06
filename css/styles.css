@@ -801,6 +801,7 @@ border: 1px solid var(--accent-color);
 
     min-width: 521px;
     min-height: 581px;
+    padding: 40px;
 
     background: var(--basic-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -823,10 +824,9 @@ border: 1px solid var(--accent-color);
     justify-content: center;
     align-items: center;
 }
-.modal-form {
-    padding: 40px;
-}
+
 .modal-title {
+    display: inline-block;
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -838,7 +838,6 @@ border: 1px solid var(--accent-color);
 
 .modal-form-label {
     display: block;
-    position: relative;
     margin-bottom: 10px;
     font-size: 12px;
     line-height: 14px;
@@ -846,11 +845,16 @@ border: 1px solid var(--accent-color);
     color: var(--main-color-txt);
 }
 
+.modal-input-general {
+    display: block;
+    position: relative;
+}
+
 .modal-icons {
     position: absolute;
-    top: 11px;
-    left: 12px;
-    transform: translateY(100%);
+    top: 0;
+    left: 3%;
+    transform: translateY(50%);
 
     transition: fill var(--anim);
 }
@@ -873,6 +877,7 @@ textarea {
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    resize: none;
 }
 textarea::placeholder {
     font-size: 12px;
